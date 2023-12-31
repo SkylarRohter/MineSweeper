@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>MineSweeper</title>
+</head>
+
+<body oncontextmenu="return false;">
+    <div id="app">
+        <div id="title">
+            <h1>JavaScript MineSweeper</h1>
+        </div>
+        <div id="container">
+            <canvas id="canvas" width="500" height="500"></canvas>
+        </div>
+        <div id="interface"></div>
+        <div id="links">
+        </div>
+    </div>
+
+    <script src="cell.js"></script>
+    <script src="game.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+    </script>
+    <script>
+        $.getScript("game.js", function () {
+            init();
+        });
+    </script>
+    <!-- <script src="board.js"></script> -->
+</body>
+
+</html>
